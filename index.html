@@ -3,53 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Célita Morales. Serie 2 de la Primera parte del Examen Parcial de Introducción a los Sistemas de Cómputo</title>
+    <title>Document</title>
 </head>
-
-<h1>¡Bienvenido!</h1>
-
-
 <body>
-
-    
-<label for="a">Ingresa el primer número</label>
-<input type="number" id="a" name="a"> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-
-
-<label for="b">Ingresa el segundo número</label>
-<input type="number" id="b" name="b"><br><br>
-
-<button>SUMAR</button>
-
-
-<br><br>
-<label for="resultado">El resultado es</label>
-<input type="number" id="resultado" name="Resultado">
+    <br>
+    <!--Inputs para capturar las 2 variables-->
+    <label for="a">Ingrese el primer número</label>
+    <input type="number" id="a" name="a"><br>
+<label for="b">Ingrese el segundo número</label>
+    <input type="number" id="b" name="b"><br>
+    <!--botón que llama a la función sumar-->
+    <button onclick="sumar()">SUMAR</button><br>
+    <!--Acá se mostrará el resultado de las variables-->
+        <label for="resultado">Este es el resultado</label>
+    <input type="number" id="resultado" name="resultado">
 
 <script>
-    function sumar(){
-        var a=document.getElementById("a").value;
-var a=document.getElementById("b").value;
+    //FUNCIÓN DE SUMA
+function sumar(){
+var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
 var resultado;
-//Se define el valor de la variable resultado
+
+//Se define que las variables son igual a enteros con esta función
+a = parseInt(a);
+b = parseInt(b);
+//Se define lo que será el resultado de la suma
 resultado = a + b;
-//Se define que esa variable es la misma que se presenta en su respectivo input
 document.getElementById("resultado").value = resultado
-
-    }
-
+}
 
 </script>
 
 
-
-
-
-
-
-
-
-
 </body>
-
 </html>
