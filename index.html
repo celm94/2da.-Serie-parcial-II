@@ -19,15 +19,27 @@
 <label for="b">Ingresa el segundo número</label>
 <input type="number" id="b" name="b"><br><br>
 
-<button onclick="sumar()">SUMAR</button>
+<button>SUMAR</button>
 
 
 <br><br>
 <label for="resultado">El resultado es</label>
 <input type="number" id="resultado" name="Resultado">
 
+<script>
+    function sumar(){
+        var a=document.getElementById("a").value;
+var a=document.getElementById("b").value;
+var resultado;
+//Se define el valor de la variable resultado
+resultado = a + b;
+//Se define que esa variable es la misma que se presenta en su respectivo input
+document.getElementById("resultado").value = resultado
+
+    }
 
 
+</script>
 
 
 
