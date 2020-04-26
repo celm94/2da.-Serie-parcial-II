@@ -12,8 +12,17 @@
     <input type="number" id="a" name="a"><br>
 <label for="b">Ingrese el segundo número</label>
     <input type="number" id="b" name="b"><br>
+
+
     <!--botón que llama a la función sumar-->
     <button onclick="sumar()">SUMAR</button><br>
+    <!--botón que llama a la función restar-->
+    <button onclick="restar()">RESTAR</button><br>
+    <!--botón que llama a la función multiplicar-->
+    <button onclick="multiplicar()">MULTIPLICACIÓN</button><br>
+    <!--botón que llama a la función división-->
+    <button onclick="dividir()">DIVIDIR</button><br>
+
     <!--Acá se mostrará el resultado de las variables-->
         <label for="resultado">Este es el resultado</label>
     <input type="number" id="resultado" name="resultado">
@@ -30,6 +39,45 @@ a = parseInt(a);
 b = parseInt(b);
 //Se define lo que será el resultado de la suma
 resultado = a + b;
+document.getElementById("resultado").value = resultado
+}
+//FUNCIÓN RESTAR
+function restar(){
+    var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+var resultado;
+
+//Se define que las variables son igual a enteros con esta función
+a = parseInt(a);
+b = parseInt(b);
+//Se define lo que será el resultado de la suma
+resultado = a - b;
+document.getElementById("resultado").value = resultado
+}
+function multiplicar(){
+    var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+var resultado;
+
+//Se define que las variables son igual a enteros con esta función
+a = parseInt(a);
+b = parseInt(b);
+//Se define lo que será el resultado de la suma
+resultado = a * b;
+document.getElementById("resultado").value = resultado
+
+}
+//FUNCIÓN DIVIDIR
+function dividir(){
+    var a = document.getElementById("a").value;
+var b = document.getElementById("b").value;
+var resultado;
+
+//Se define que las variables son igual a enteros con esta función
+a = parseInt(a);
+b = parseInt(b);
+//Se define lo que será el resultado de la suma
+resultado = a / b;
 document.getElementById("resultado").value = resultado
 }
 
