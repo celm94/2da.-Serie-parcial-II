@@ -4,27 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <center>
+        <br><br><br><br><br><br>
+        <h1>¡BIENVENIDO!</h1>
+        <h2>En éste espacio podrás realizar suma, resta, multiplicación y división de dos números enteros</h2>
+        <link rel="stylesheet" href="estilos.css">
 </head>
-<body>
-    <br>
+<body background="wallpapers/samsung-galaxy-s20-wallpapers-uitg.jpg" style="width: 100%; height: 100%;">
+
+
+    <br><br>
     <!--Inputs para capturar las 2 variables-->
     <label for="a">Ingrese el primer número</label>
-    <input type="number" id="a" name="a"><br>
+    <input type="number" id="a" name="a">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 <label for="b">Ingrese el segundo número</label>
-    <input type="number" id="b" name="b"><br>
+    <input type="number" id="b" name="b"><br><br><br><br>
 
 
     <!--botón que llama a la función sumar-->
-    <button onclick="sumar()">SUMAR</button><br>
+    <button onclick="sumar()">SUMAR</button>&nbsp;&nbsp;&nbsp;&nbsp;
     <!--botón que llama a la función restar-->
-    <button onclick="restar()">RESTAR</button><br>
+    <button onclick="restar()">RESTAR</button>&nbsp;&nbsp;&nbsp;&nbsp;
     <!--botón que llama a la función multiplicar-->
-    <button onclick="multiplicar()">MULTIPLICACIÓN</button><br>
+    <button onclick="multiplicar()">MULTIPLICACIÓN</button>&nbsp;&nbsp;&nbsp;&nbsp;
     <!--botón que llama a la función división-->
-    <button onclick="dividir()">DIVIDIR</button><br>
+    <button onclick="dividir()">DIVIDIR</button><br><br><br><br>
 
     <!--Acá se mostrará el resultado de las variables-->
-        <label for="resultado">Este es el resultado</label>
+        <label for="resultado">Resultado</label>
     <input type="number" id="resultado" name="resultado">
 
 <script>
@@ -172,6 +180,8 @@ document.getElementById("resultado").value = resultado
 
 </script>
 
-
+</ul>
+</div>
 </body>
+</center>
 </html>
